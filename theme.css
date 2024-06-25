@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+html, body{
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading {
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+}
+.sub-heading {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+}
+.branch{
+    font-size: 1.5em;
+    font-family: 'Caveat', cursive;
+}
+.fixed-button{
+    background: rgba(20,20,20,.5);
+    border-radius: 1em;
+    bottom: 1em;
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    position: fixed;
+    right: 1em;
+    text-decoration: none;
+    z-index: 9999;
+}
+.fixed-button::after{
+    content: "\25BE";
+    display: block;
+    font-size: 28px;
+    line-height: 0;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    text-align: center;
+}
+.fixed-button:active,
+.fixed-button:hover{
+    background: rgba(20,20,20,.9);
+}
+.section{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.3em 2.4em;
+}
+.details{
+    margin: 0 auto 2em;
+}
+.details-heading{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.fas {
+    font-size: 3em;
+    opacity: .8;
+}
+.resort-image{
+    width: 100%
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+    .heading {
+        font-size: 1em;
+    }
+    .sub-heading{
+        font-size: 0.8em; 
+    }
+    .branch{
+        font-size: 20px;
+        font-family: 'Caveat', cursive;
+    }
+    .details-heading {
+        font-size: 18px;
+    }
+    .quote{
+        font-size: 0.3em;
+        font-family: 'Droid Arabic Kufi', serif;
+    }
+    body{
+        height: 90vh;
+    }
+    .event-time{
+        font-size: 16px;
+    }
+}
